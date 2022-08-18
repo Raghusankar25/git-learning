@@ -1,0 +1,14 @@
+Program to Explain all data types including signed and unsigned.
+
+
+#include <stdio.h>
+int main()
+{
+    signed int a = -10; // can able to hold both +ve and -ve values.
+    unsigned int b = -20;   // can able to store only +ve values.
+    printf("%d %u", a, b);
+    return 0;
+}
+
+Output:
+-10 4294967276
