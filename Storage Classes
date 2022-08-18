@@ -1,0 +1,30 @@
+Program to explain all storage classes scope
+
+#include<stdio.h>
+void fun()
+{
+    static int p=20; //static variable is declared,scope is within the block 
+    ++p; // p is preincrement 
+    printf("static=%d\n",p);  
+    auto int q=102; //auto variable is declared and it is initialized as 102 because its default value is garbage
+    --q; // q is decrement
+    printf("auto=%d \n",q);
+    register int r=55;
+    ++r; // r is preincrement
+    printf("register=%d \n",r);
+}
+int main()
+{
+    fun();
+    fun();
+}
+
+
+output:
+
+static=21
+auto=101 
+register=56 
+static=22
+auto=101 
+register=56 
