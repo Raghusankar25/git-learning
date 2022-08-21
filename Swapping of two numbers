@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+// function to swap the two numbers
+void swap(int *x,int *y)
+{
+    int t;
+     r   = *p; 
+    *p   = *q;
+    *q   =  r;
+}
+
+int main()
+{
+    int n1,n2;
+
+    printf("Enter value of n1: ");
+    scanf("%d",&n1);
+    printf("Enter value of n2: ");
+    scanf("%d",&n2);
+
+    //displaying numbers before swapping
+    printf("Before Swapping: n1 is: %d, n2 is: %d\n",n1,n2);
+
+    //calling the user defined function swap()
+    swap(&n1,&n2);
+
+    //displaying numbers after swapping
+    printf("After  Swapping: n1 is: %d, n2 is: %d\n",n1,n2);
+
+    return 0;
+}
+
+
+Output:
+Enter value of n1:10
+Enter value of n2:20
+Before Swapping: n1 is: 10, n2 is: 20
+After  Swapping: n1 is: 20, n2 is: 10 
+
